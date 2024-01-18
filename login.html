@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login with Singpass</title>
+    <! -- This is to link to the google fonts -- >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- #to link to the css style -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <title>Learn to login Singpass and retrieve data!</title>
+
+  <body>
+    <header class="header">
+      <h1>Web App with Singpass Login</h1>
+      <br />
+
+      <button class="login" id="singpass-login-btn">
+        <div class="container">
+          <div class="text"><p>Login with &nbsp;</p></div>
+          <div class="image">
+            <img
+              src="singpass_logo.png"
+              width="80px"
+              position:absolute;
+              top:0
+              bottom:0
+              margin:0
+              vertical-align:bottom;
+            />
+          </div>
+        </div>
+      </button>
+    </header>
+
+    <script>
+      //document
+      //  .getElementById("singpass-login-btn")
+      //  .addEventListener("click", function () {
+      //    var xhr = new XMLHttpRequest();
+      //    xhr.open("GET", "/auth/singpass", true);
+      //    xhr.setRequestHeader("X-Show-Login-Page", "true");
+      //    xhr.setRequestHeader("Access-Control-Allow-Headers", "*"); // Set your custom header here
+      //    xhr.onreadystatechange = function () {
+      //      if (
+      //        this.readyState === XMLHttpRequest.DONE &&
+      //        this.status === 200
+      //      ) {
+      //        // Handle the response here
+      //        window.location.href = this.responseText; // For example, redirect to the URL provided by the server
+      //      }
+      //    };
+      //    xhr.send();
+      //  });
+
+      document
+        .getElementById("singpass-login-btn")
+        .addEventListener("click", function () {
+          window.location.href = "/auth/singpass";
+        });
+    </script>
+  </body>
+</html>
